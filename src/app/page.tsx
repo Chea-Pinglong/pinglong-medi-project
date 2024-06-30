@@ -47,8 +47,7 @@ export default function Home() {
     fetchData();
   }, []);
   return (
-    <div className="container mx-auto">
-      <Navigation />
+    <div>
 
     <div className="flex flex-col gap-y-12">
       <HeroSection/>
@@ -148,7 +147,7 @@ export default function Home() {
       <SaleMaterialDiscountSection />
       <DailyBlogSection blogs={blogs} />
       <CompanySection />
-      <Footer/>
+      
     </div>
     </div>
   );

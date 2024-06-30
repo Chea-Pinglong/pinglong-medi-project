@@ -12,12 +12,13 @@ import { Input } from "./input";
 import { FiPhoneCall } from "react-icons/fi";
 import { IoHeartOutline } from "react-icons/io5";
 import Image from "next/image";
+import Link from "next/link";
 const Navigation = () => {
   return (
-    <div>
+    <div className="">
       <div className="flex flex-col">
       {/* first navbar */}
-      <div className="flex flex-row justify-between align-middle items-center h-11 border-b-2 border-gray-200">
+      <div className="flex flex-row container mx-auto justify-between align-middle items-center h-11 border-b-2 border-gray-200">
         {/* left part */}
         <div className="flex flex-row gap-x-2 ">
           <HiOutlineMapPin width={15} height={18} />
@@ -46,7 +47,7 @@ const Navigation = () => {
         </div>
       </div>
       {/* second navbar */}
-      <div className="flex flex-row justify-between align-middle items-center h-[85px]">
+      <div className="flex flex-row container mx-auto justify-between align-middle items-center h-[85px]">
         {/* left part */}
         <div>
           <Image
@@ -81,13 +82,21 @@ const Navigation = () => {
         {/* right part */}
         <div className="flex flex-row items-center">
           <div className="flex flex-row gap-x-4">
+          <button className="text-black hover:text-red-500 ">
 
           <IoHeartOutline size={32} />
+          </button>
           <hr className="h-8 border-2 border-[#CCCCCC]" />
           </div>
-          <div className="flex flex-row items-center ml-4 gap-x-3">
+          <div className="flex flex-row items-center ml-4 gap-x-3 relative">
 
-          <HiOutlineShoppingBag size={32} slope={32} />
+          <button className="text-black hover:text-red-500">
+
+          <HiOutlineShoppingBag size={32} />
+          <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-[#008001] border-2 border-white rounded-full -top-2 -end-2 left-4 ">
+                2
+              </div>
+          </button>
           <Typography className="text-[#4D4D4D] !text-[11px]" fontWeight="normal">Shopping Cart:</Typography>
           <Typography className="text-[#1A1A1A]" fontSize="sm" fontWeight="extrabold">$0</Typography>
           </div>
@@ -95,13 +104,17 @@ const Navigation = () => {
       </div>
 
       {/* third navbar */}
-      <div className="flex flex-row justify-between align-middle items-center bg-[#333333] px-[140px] h-[60px]">
+      <div className="flex flex-row justify-between align-middle items-center bg-[#333333] container mx-auto h-[60px]">
         <div className="flex flex-row">
-          <Button className="rounded-none bg-[#333333] focus:bg-[#008001]">Home</Button>
-          <Button className="rounded-none bg-[#333333] focus:bg-[#008001]">Shop <HiChevronDown color="#FFFFFF" className="ml-2" /></Button>
-          <Button className="rounded-none bg-[#333333] focus:bg-[#008001]">Blog <HiChevronDown color="#FFFFFF" className="ml-2" /></Button>
-          <Button className="rounded-none bg-[#333333] focus:bg-[#008001]">About Us</Button>
-          <Button className="rounded-none bg-[#333333] focus:bg-[#008001]">Contact Us</Button>
+          <Button className=" bg-[#333333] hover:bg-[#008001]">
+          <Link href={"../"}>Home</Link>
+          </Button>
+          <Button className=" bg-[#333333] hover:bg-[#008001]">Shop <HiChevronDown color="#FFFFFF" className="ml-2" /></Button>
+          <Button className=" bg-[#333333] hover:bg-[#008001]">Blog <HiChevronDown color="#FFFFFF" className="ml-2" /></Button>
+          <Button className=" bg-[#333333] hover:bg-[#008001]">
+            <Link href={"aboutUs"}>About Us</Link>
+          </Button>
+          <Button className=" bg-[#333333] hover:bg-[#008001]">Contact Us</Button>
         </div>
         <div className="flex flex-row justify-center items-center gap-x-2">
           <FiPhoneCall color="white"/>

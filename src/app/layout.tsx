@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google"
 import "./globals.css";
 import { cn } from "@/lib/utils"
 import { Navigation } from "@/components/ui/Navigation";
+import { Footer } from "@/components/ui/Footer";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -20,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html className="" lang="en">
-      <body className={fontSans.className}>{children}</body>
+      <body className={`${fontSans.className} flex flex-col min-h-screen`}>
+        <Navigation/>
+        <main className="flex-grow">{children}</main>
+        <Footer/>
+      </body>
       
   </html>
   );

@@ -9,7 +9,7 @@ import { CiMail } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col bg-red-500">
+    <div className="flex flex-col">
       <div className="flex justify-between items-center container mx-auto bg-[#F7F7F7] py-8">
         <div className="flex space-x-4">
           <Typography fontSize="base" fontWeight="medium">
@@ -81,24 +81,24 @@ const Footer = () => {
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   My Account
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Order History
                 </Typography>
-                <Typography align="left" fontSize="sm">
+                <Typography align="left" fontSize="sm" className="text-[#999999] hover:text-white hover:cursor-pointer">
                   Shopping Cart
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Wishlist
                 </Typography>
@@ -113,28 +113,28 @@ const Footer = () => {
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Contact
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Faqs
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Terms & Condition
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Privacy Policy
                 </Typography>
@@ -149,28 +149,28 @@ const Footer = () => {
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   About
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Shop
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Product
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Track Order
                 </Typography>
@@ -185,28 +185,28 @@ const Footer = () => {
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Fruit & Vegetables
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Meat & Fish
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
-                  Meat & Fish
+                  Bread & Bakery
                 </Typography>
                 <Typography
                   align="left"
                   fontSize="sm"
-                  className="text-[#999999]"
+                  className="text-[#999999] hover:text-white hover:cursor-pointer"
                 >
                   Beauty & Health
                 </Typography>
