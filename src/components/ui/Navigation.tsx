@@ -110,11 +110,17 @@ const Navigation = () => {
           <Link href={"../"}>Home</Link>
           </Button>
           <Button className=" bg-[#333333] hover:bg-[#008001]">Shop <HiChevronDown color="#FFFFFF" className="ml-2" /></Button>
-          <Button className=" bg-[#333333] hover:bg-[#008001]">Blog <HiChevronDown color="#FFFFFF" className="ml-2" /></Button>
+          <Button className=" bg-[#333333] hover:bg-[#008001]">
+           <Link href={"blog"}>
+           Blog 
+           </Link>
+            <HiChevronDown color="#FFFFFF" className="ml-2" /></Button>
           <Button className=" bg-[#333333] hover:bg-[#008001]">
             <Link href={"aboutUs"}>About Us</Link>
           </Button>
-          <Button className=" bg-[#333333] hover:bg-[#008001]">Contact Us</Button>
+          <Button className=" bg-[#333333] hover:bg-[#008001]">
+            <Link href={'contactUs'}>Contact Us</Link>
+          </Button>
         </div>
         <div className="flex flex-row justify-center items-center gap-x-2">
           <FiPhoneCall color="white"/>
