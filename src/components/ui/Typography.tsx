@@ -5,15 +5,15 @@ interface TypographyProps {
   className?: string;
   align?: "left" | "center" | "right" | "justify";
   fontSize?: "sm" | "base" | "lg" | "xl" | "5xl" | "32" | "58"
-  variant?: "normal" | "medium" | "semibold" | "extrabold";
+  fontWeight?: "normal" | "medium" | "semibold" | "extrabold";
 }
 
 const Typography: FC<TypographyProps> = ({
   children,
   className = "",
-  align = "center",
-  fontSize = "base",
-  variant = "normal",
+  align = "",
+  fontSize = "",
+  fontWeight = "",
 }) => {
 
   const typographyAlignment = (align: string) =>{
@@ -31,8 +31,8 @@ const Typography: FC<TypographyProps> = ({
       }
   }
 
-  const typographyVariant = (variant: string) =>{
-    switch (variant) {
+  const typographyfontWeight = (fontWeight: string) =>{
+    switch (fontWeight) {
         case "normal":
           return "font-normal";
         case "medium":
@@ -46,8 +46,8 @@ const Typography: FC<TypographyProps> = ({
       }
   }
 
-  const typographySize = (size: string) =>{
-    switch(size){
+  const typographySize = (fontSize: string) =>{
+    switch(fontSize){
         case "sm":
             return "text-sm"
         case "base":
@@ -67,16 +67,16 @@ const Typography: FC<TypographyProps> = ({
     }
   }
 
-  const alignClass = `text-${align}`;
-  const fontSizeClass = `text-${fontSize}`;
-  const variantClass = `font-${variant}`;
+  const typographyAlignmentStyle = typographyAlignment(align)
+  const typographyfontWeightStyle = typographyfontWeight(fontWeight)
+  const typographySizeStyle = typographySize(fontSize)
 
   return (
-    <p
-      className={`${alignClass} ${fontSizeClass} ${variantClass} ${className}`}
+    <div
+      className={`${typographyAlignmentStyle} ${typographyfontWeightStyle} ${typographySizeStyle} ${className}`}
     >
       {children}
-    </p>
+    </div>
   );
 };
 
