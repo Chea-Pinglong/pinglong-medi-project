@@ -1,5 +1,5 @@
+"use client"
 import React from "react";
-import { cn } from "@/lib/utils";
 import { Typography } from "./Typography";
 import {
   HiOutlineMapPin,
@@ -13,7 +13,10 @@ import { FiPhoneCall } from "react-icons/fi";
 import { IoHeartOutline } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 const Navigation = () => {
+
+  const pathName =usePathname();
   return (
     <div className="">
       <div className="flex flex-col">
@@ -51,7 +54,7 @@ const Navigation = () => {
         {/* left part */}
         <div>
           <Image
-            src={"icons/logo.svg"}
+            src={"/icons/logo.svg"}
             alt="logo icon"
             height={40}
             width={40}

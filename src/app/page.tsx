@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { Navigation } from "@/components/ui/Navigation";
 import { Typography } from "@/components/ui/Typography";
 import { PopularCategories } from "@/components/ui/PopularCategories";
 import { useEffect, useState } from "react";
@@ -8,7 +7,6 @@ import { PopularProducts } from "@/components/ui/PopularProducts";
 import { SaleMaterialDiscountSection } from "@/components/ui/SaleMaterialDiscountSection";
 import DailyBlogSection from "@/components/ui/DailyBlogSection";
 import { CompanySection } from "@/components/ui/CompanySection";
-import { Footer } from "@/components/ui/Footer";
 import { HeroSection } from "@/components/ui/HeroSection";
 
 interface Category {

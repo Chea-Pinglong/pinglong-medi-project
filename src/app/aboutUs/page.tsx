@@ -13,11 +13,7 @@ const page = () => {
   return (
     <div>
       <div className="container mx-auto">
-        {/* <div className="flex items-center gap-x-3 container mx-auto my-8">
-          <GoHome />
-          <IoIosArrowForward />
-          <Typography className="text-[#008001]">About Us</Typography>
-        </div> */}
+        
         <Breadcrumb/>
       </div>
 
