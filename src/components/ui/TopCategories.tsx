@@ -29,4 +29,4 @@ const TopCategories: React.FC = () => {
   );
 };
 
-export default TopCategories;
+export {TopCategories};

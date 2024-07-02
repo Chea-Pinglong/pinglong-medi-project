@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Typography } from "./Typography";
 import Image from "next/image";
-import ProductCard from "./ProductCard";
+import {ProductCard} from "./ProductCard";
 interface Product {
   name: string;
   price: string;

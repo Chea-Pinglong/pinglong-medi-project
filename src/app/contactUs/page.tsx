@@ -1,9 +1,8 @@
-import Breadcrumb from "@/components/ui/Breadcrumb";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Typography } from "@/components/ui/Typography";
 import Image from "next/image";
-import React from "react";
 
 const page = () => {
   return (

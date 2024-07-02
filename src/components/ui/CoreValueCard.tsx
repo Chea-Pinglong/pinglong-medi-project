@@ -105,4 +105,4 @@ const CoreValueCard = () => {
   );
 };
 
-export default CoreValueCard;
+export {CoreValueCard};

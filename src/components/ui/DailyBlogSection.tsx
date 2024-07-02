@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import DailyBlogCard from "./DailyBlogCard";
+import {DailyBlogCard} from "./DailyBlogCard";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi2";
 import { Button } from "./button";
 
@@ -46,4 +46,4 @@ const DailyBlogSection: FC<DailyBlogSectionProps> = ({ blogs }) => {
     </section>
   );
 };
-export default DailyBlogSection;
+export {DailyBlogSection};

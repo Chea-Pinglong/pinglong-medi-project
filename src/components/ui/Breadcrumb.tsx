@@ -1,8 +1,8 @@
 "use client";
 
-import React, { FC } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React, { FC } from "react";
 import { FaChevronRight, FaHome } from "react-icons/fa";
 
 const Breadcrumb: FC = () => {
@@ -43,4 +43,4 @@ const Breadcrumb: FC = () => {
   );
 };
 
-export default Breadcrumb;
+export {Breadcrumb};

@@ -1,14 +1,14 @@
 "use client";
 
-import DailyBlogCard from "@/components/ui/DailyBlogCard";
-import Breadcrumb from "@/components/ui/Breadcrumb";
-import Gallery from "@/components/ui/Gallery";
-import PopularTags from "@/components/ui/PopularTags";
-import RecentAdd from "@/components/ui/RecentAdd";
-import TopCategories from "@/components/ui/TopCategories";
+import {DailyBlogCard} from "@/components/ui/DailyBlogCard";
+import {Breadcrumb} from "@/components/ui/Breadcrumb";
+import {Gallery} from "@/components/ui/Gallery";
+import {PopularTags} from "@/components/ui/PopularTags";
+import {RecentAdd} from "@/components/ui/RecentAdd";
+import {TopCategories} from "@/components/ui/TopCategories";
 import { CiSliderHorizontal } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
-import Pagination from "@/components/ui/Pagination";
+import {Pagination} from "@/components/ui/Pagination";
 import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";

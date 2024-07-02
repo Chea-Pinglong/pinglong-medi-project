@@ -43,4 +43,4 @@ const PopularTags: React.FC = () => {
   );
 };
 
-export default PopularTags;
+export {PopularTags};

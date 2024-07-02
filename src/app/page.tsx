@@ -5,7 +5,7 @@ import { PopularCategories } from "@/components/ui/PopularCategories";
 import { useEffect, useState } from "react";
 import { PopularProducts } from "@/components/ui/PopularProducts";
 import { SaleMaterialDiscountSection } from "@/components/ui/SaleMaterialDiscountSection";
-import DailyBlogSection from "@/components/ui/DailyBlogSection";
+import {DailyBlogSection} from "@/components/ui/DailyBlogSection";
 import { CompanySection } from "@/components/ui/CompanySection";
 import { HeroSection } from "@/components/ui/HeroSection";
 
@@ -29,6 +29,7 @@ interface Product {
   image: string;
   discount: number;
 }
+
 export default function Home() {
   const [category, setCategory] = useState<Category[]>([]);
   const [product, setProduct] = useState<Product[]>([]);

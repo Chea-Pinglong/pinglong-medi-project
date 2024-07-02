@@ -52,4 +52,4 @@ const RecentAdd: React.FC = () => {
   );
 };
 
-export default RecentAdd;
+export {RecentAdd};

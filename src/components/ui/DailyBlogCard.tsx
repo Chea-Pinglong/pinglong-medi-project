@@ -56,4 +56,4 @@ const DailyBlogCard: FC<DailyBlogCardProps> = ({title, date, image, content}) =>
   )
 }
 
-export default DailyBlogCard
+export {DailyBlogCard}

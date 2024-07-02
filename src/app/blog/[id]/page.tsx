@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Breadcrumb from "@/components/ui/Breadcrumb";
-import Gallery from "@/components/ui/Gallery";
-import PopularTags from "@/components/ui/PopularTags";
-import RecentAdd from "@/components/ui/RecentAdd";
-import TopCategories from "@/components/ui/TopCategories"
-import Image from "next/image";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { Gallery } from "@/components/ui/Gallery";
+import { PopularTags } from "@/components/ui/PopularTags";
+import { RecentAdd } from "@/components/ui/RecentAdd";
+import { TopCategories } from "@/components/ui/TopCategories";
 import { FaComment, FaInstagram, FaPinterestP, FaSearch, FaTag, FaTwitter } from "react-icons/fa";
 import { IoPersonOutline } from "react-icons/io5";
 import { SlSocialFacebook } from "react-icons/sl";
