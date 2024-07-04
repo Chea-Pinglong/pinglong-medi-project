@@ -1,5 +1,4 @@
 "use client";
-
 import {DailyBlogCard} from "@/components/ui/DailyBlogCard";
 import {Breadcrumb} from "@/components/ui/Breadcrumb";
 import {Gallery} from "@/components/ui/Gallery";
@@ -9,12 +8,14 @@ import {TopCategories} from "@/components/ui/TopCategories";
 import { CiSliderHorizontal } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import {Pagination} from "@/components/ui/Pagination";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { PopularTagSection } from "@/components/ui/PopularTagSection";
+import { GallerySection } from "@/components/ui/GallerySection";
 
 const blogData = [
-  {
+  {  
     title: "Curabitur porttitor orci eget neque accumsan.",
     date: "Jun 25, 2023",
     image:
@@ -142,7 +143,30 @@ const blogData = [
   },
 ];
 
+interface Gallery {
+  image: string
+  id: number
+}
+
+interface PopularTag{
+  tag: string
+}
+ 
 const Blog = () => {
+  const [gallery ,setGallery] = useState<Gallery[]>([])
+  const [popularTag, setPopularTag] = useState<PopularTag[]>([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("/api/data");
+      const data = await res.json();
+
+      setGallery(data.gallerys);
+      setPopularTag(data.tags)
+      };
+    fetchData();
+  }, []);
+
   const resultsFound = 52; // Replace with dynamic data if necessary
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 8;
@@ -222,10 +246,10 @@ const Blog = () => {
             <TopCategories />
             <div className="bg-gray-200 w-full h-[1px]" />
             {/* Popular Tags */}
-            <PopularTags />
+            <PopularTagSection popularTags={popularTag} />
             <div className="bg-gray-200 w-full h-[1px]" />
             {/* Our Gallery */}
-            <Gallery />
+            <GallerySection gallerys={gallery} />
             {/* Recently Added */}
             <RecentAdd />
           </div>

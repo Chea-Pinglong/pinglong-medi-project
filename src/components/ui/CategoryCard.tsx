@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import Image from "next/image";
 interface CategoryCardProps {
   name: string;
@@ -6,7 +6,7 @@ interface CategoryCardProps {
   isSelected?: boolean; // Optional prop to handle selected state
 }
 
-const CategoryCard: React.FC<CategoryCardProps> = ({
+const CategoryCard: FC<CategoryCardProps> = ({
   name,
   image,
   isSelected,

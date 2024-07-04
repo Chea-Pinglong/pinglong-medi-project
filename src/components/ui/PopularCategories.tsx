@@ -1,5 +1,6 @@
+
 import React, { FC } from "react";
-import CategoryCard from "./CategoryCard";
+import {CategoryCard} from "./CategoryCard";
 import Image from "next/image";
 // import Container from "./Container";
 

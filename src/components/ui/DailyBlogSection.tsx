@@ -25,7 +25,6 @@ const DailyBlogSection: FC<DailyBlogSectionProps> = ({ blogs }) => {
                 <HiArrowLeft />{" "}
               </Button>
               <Button className="text-gray-700 bg-[#F2F2F2] p-[10px] hover:bg-[#008001] hover:text-white rounded-full flex items-center justify-center">
-                {/* <ArrowRightIcon className="w-[24px] h-[24px]" /> */}
                 <HiArrowRight />
               </Button>
             </div>
