@@ -8,6 +8,7 @@
   import {DailyBlogSection} from "@/components/ui/DailyBlogSection";
   import { CompanySection } from "@/components/ui/CompanySection";
   import { HeroSection } from "@/components/ui/HeroSection";
+import { CarouselCard } from "@/components/ui/CarouselCard";
 
   interface Category {
     name: string;
@@ -20,7 +21,6 @@
     image: string;
     content: string;
   }
-
   interface Product {
     name: string;
     price: string;
@@ -49,7 +49,8 @@
       <div>
 
       <div className="flex flex-col gap-y-12">
-        <HeroSection/>
+        {/* <HeroSection/> */}
+        <CarouselCard/>
         {/* 4 card section */}
         <div className="grid grid-cols-4 container mx-auto">
           {/* free shipping */}
